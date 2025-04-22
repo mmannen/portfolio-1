@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <title>martinlinden</title>
+    <style>
+
+        .section {
+            width: 100%;
+            position: relative;
+        }
+        .top-section {
+         height: clamp(600px, 100vh, 1000px);
+        background-color: #FFB36F;
+
+        }
+        .middle-section {
+         height: clamp(600px, 100vh, 1000px);
+            background-color: #D0AA92;
+        }
+
+        .project-section {
+        height: clamp(1500px, 270vh, 10000px);
+        background-color: #C9D5BE;
+        }
+
+        .education-section {
+        height: clamp(600px, 120vh, 1000px);
+        background-color: #B9C5F9;
+
+        }
+
+         .contact-section {
+         height: clamp(600px, 100vh, 1000px);
+            background-color: #D98E6F;
+        }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+
+.bee {
+  position: absolute;
+  background-image: url('Group 74-bee.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: -100px;
+  width: 50px;
+  height: 40px;
+  animation: fly 20s linear 3s , flap 0.2s steps(2) 3s infinite;
+  z-index: 0;
+  opacity: 1; /* Ensure visibility */
+}
+
+/* Updated fly animation */
+@keyframes fly {
+  0% {
+    transform: translate(0, 40vh); /* Normal orientation */
+  }
+  20% {
+    transform: translate(22vw, 30vh);
+  }
+  40% {
+    transform: translate(44vw, 20vh);
+  }
+
+  60% {
+    transform: translate(66vw, 10vh);
+  }
+
+  80% {
+    transform: translate(88vw, ovh);
+  }
+  100% {
+    transform: translate(110vw, -20vh);
+  }
+}
+
+
+
+
+/* Flap Animation */
+@keyframes flap {
+  0%, 49% {
+    background-image: url('Frame 3-bee1.png'); /* Bee 1 */
+    opacity: 1; /* Bee 1 is visible */
+  }
+  50%, 100% {
+    background-image: url('Frame 2-bee2.png'); /* Bee 2 */
+    opacity: 1; /* Bee 2 is visible */
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="top-section" class="section top-section">
+        <div class="bee"></div>
+        <!-- First Section: Header and Navigation -->
+<div class="martin-wrapper">
+  <img src="martin-first-page.png" class="martin" />
+</div>
+
+        <div class="martin-linden"> MARTIN M. LINDÉN </div>
+        <div class="interaction-design"> Interaction Design </div>
+    <div class="nav-container">
+        <div class="nav-rectangel"></div>
+
+
+        <div class="navigation-bar-home" >
+            <a href="#top-section" class="home-link active">
+                <div class="home-home" data-section-id="top-section">Home</div>
+            </a>
+            <a href="#project-section" class="home-link">
+            <div class="project-home" data-section-id="project-section">Projects</div>
+            </a>
+            <a href="#education-section" class="home-link">
+                <div class="education-home" data-section-id="education-section">Education</div>
+            </a>
+            <a href="#contact-section" class="home-link">
+                <div class="contact-home" data-section-id="contact-section">Contact</div>
+            </a>
+        </div>
+    </div>
+</div>
+    <div id="middle-section" class="section middle-section">
+<div class="text-wrapper">
+  <div class="text-designer">
+    <b>HEY<br>THERE!</b>
+  </div>
+
+  <div class="text-block-1">
+    And welcome to my portfolio website. I created this using
+    <b class="bold-text-1">HTML</b>,
+    <b class="bold-text-1">CSS</b>, and
+    <b class="bold-text-1">JavaScript</b>.
+    All illustrations were made by me in Figma.
+    This portfolio gives you a glimpse into how I think and create. You'll find projects from both my academic studies and those I created on my own time.
+  </div>
+
+  <div class="text-block-2">
+    I reside in Stockholm, but I grew up in a small coastal town in Östergötland.
+    When I’m not studying or designing, you’ll likely find me outdoors. Or perhaps in the kitchen baking.
+  </div>
+
+  <div class="keywords">
+    <div class="keyword">Figma</div>
+    <div class="keyword">Python/Java</div>
+    <div class="keyword">Front-end</div>
+    <div class="keyword">Human cognition</div>
+  </div>
+</div>
+        </div>
+
+    <div id="project-section" class="section project-section">
+
+
+    <!-- Idea and design labels with a curved line -->
+    <div class="idea">From Idea</div>
+    <img class="curved-line" src="curved-line.png" alt="Curved line">
+    <div class="design">to Design</div>
+<div class="overview-1">
+    <a href="project-detail-1.html" aria-label="View project details for Info-3">
+        <img src="Info-3.png" alt="Project Info-3 Image"/>
+    </a>
+</div>
+
+
+    <div class="overview-2">
+         <a href="project-detail-2.html">
+             <img src="verni-1.1.png"/>
+           </a>
+    </div>
+
+    <div class="overview-3">
+         <a href="project-detail-3.html">
+             <img src="Uniguiden1.png"/>
+           </a>
+    </div>
+
+    <div class="overview-4">
+         <a href="project-detail-4.html">
+             <img src="exjob-1.png"/>
+           </a>
+    </div>
+
+<div class="overview-5">
+    <a href="project-detail-5.html">
+  <img src="infotainment-updated.png" alt="Overview 5">
+        </a>
+</div>
+
+        <div class="overview-6">
+            <a href="project-detail-6.html">
+  <img src="Trendy3.png" alt="Overview 6">
+                </a>
+</div>
+
+    </div>
+
+<div id="education-section" class="section education-section">
+    <div class="scaling-wrapper">
+    <div class="degree"> Degrees </div>
+    <div class="degree-year"> 2020-2026* </div>
+    <div class="degree-gapyear"> *One gap-year between M.Sc and B.Sc </div>
+
+    <div class="container">
+        <!-- Flip card for KTH -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <!-- Front Face -->
+                <div class="flip-card-front flip-card-front-left">
+                    <img class="kth" src="kthlogga.png" alt="KTH Logo">
+                    <div class="m-sc">M.Sc Interactive Media Technology</div>
+                    <div class="m-sc-uni">KTH Royal Institute of Technology</div>
+                    <div class="kth-more" id="kth-more">Show more</div>
+                    <div class="text-kth">
+                        The study of how to design, develop, and evaluate physical and digital products.
+                        It touches on subjects such as interaction design, human-computer interaction, and computer science.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flip card for UMU -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <!-- Front Face -->
+                <div class="flip-card-front flip-card-front-right">
+                    <img class="umu" src="umulogga.png" alt="UMU Logo">
+                    <div class="b-sc">B.Sc Cognitive Science</div>
+                    <div class="b-sc-uni">Umeå University</div>
+                    <div class="umu-more" id="umu-more">Show more</div>
+                    <div class="text-umu">
+                        The study of how humans and machines perceive and process information.
+                        It is an interdisciplinary field of neuroscience, computer science, psychology, philosophy,
+                        and linguistics.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="strack"></div>
+
+    <div class="course-text" id="course-text">
+        <div class="row"><b>Total 120 credits</b></div>
+    <div class="row">
+    Design, 30 credits
+    <div class="description">Focusing on industrial/physical interaction design.</div>
+    </div>
+    <div class="row">
+    Neuroscience, 7.5 credits
+    <div class="description"></div>
+    </div>
+    <div class="row">
+    Other, 22.5 credits
+    <div class="description">Economics, sustainability, and philosophy.</div>
+    </div>
+    <div class="row">
+    To be continued...
+    </div>
+
+    </div>
+
+     <div class="course-text-umu" id="course-text-umu">
+         <div class="row"><b>Total 180 credits</b></div>
+            <div class="row">
+  <span>Psychology, 42.5 credits</span><br>
+  <div class="subject-description"> How people think, feel, and act in different situations.</div>
+</div>
+<div class="row">
+  <span>Computer Science, 36 credits</span><br>
+  <div class="subject-description">Programming, algorithms, data structures, and artificial intelligence.</div>
+</div>
+<div class="row">
+  <span>Design, 22.5 credits</span><br>
+  <div class="subject-description"> How to create functional and aesthetic products focusing on user experience.</div>
+</div>
+<div class="row">
+  <span>Neuroscience, 21.5 credits</span><br>
+  <div class="subject-description"> The structure and function of the brain and nervous system.</div>
+</div>
+<div class="row">
+  <span>Philosophy, 21.5 credits</span><br>
+  <div class="subject-description"> Fundamental questions of existence, knowledge, ethics, and reasoning.</div>
+</div>
+<div class="row">
+  <span>Linguistics, 21.5 credits</span><br>
+  <div class="subject-description">The structure of language, including how sounds, words, and sentences are formed, and how language shape thought.</div>
+</div>
+<div class="row">Bachelor's thesis, 15 credits <br> </div>
+
+
+    </div>
+
+</div>
+</div>
+    <!-- Add more content sections as needed -->
+<div id="contact-section" class="section contact-section">
+    <div class="rectangel-contact"></div>
+    <div class="me">  <img src="me-2.png"/> </div>
+    <div class="contact-header">Want to know more?</div>
+    <div class="mail">
+  Send me an e-mail on <span class="highlighted">martin.linden003@gmail.com</span> or text/call <span class="highlighted">+46 72 337-0337</span>
+</div>
+
+    <div class="phone"></div>
+</div>
+
+
+    <!-- Existing Script -->
+    <script src="main.js"></script>
+
+<!-- Image Overlay -->
+<div class="image-overlay">
+    <img src="" alt="Enlarged Image">
+</div>
+
+
+</body>
+</html>
