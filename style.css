@@ -78,6 +78,12 @@ body {
     color: #A36238;
 }
 
+.project-home-1 {
+    font-size: 1.74vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+}
 
 .text-wrapper {
   position: absolute;
