@@ -1074,13 +1074,20 @@ border-radius: 0.14vw;
 
 .phone {
     position: absolute;
-    font-size: 1.67vw;
-    top: 59.11vh;       /* 480px / 812 * 100 */
+    font-size: 1.11vw;
+    max-width: 24.31vw; 
+    text-align: justify;
+    top: 60.11vh;       /* 480px / 812 * 100 */
     left: 50vw;
     color: #ffffff;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
+
+.highlighted-2 {
+    font-weight: 600;
+}
+
 
 .rectangel-contact {
     position: absolute;
