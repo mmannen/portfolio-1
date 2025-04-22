@@ -750,7 +750,7 @@ body {
     border: 0.486vw solid #E0E8D9;
 }
 
-.back-button .arrow {
+.back-button {
   font-size: 1.74vw;
   position: absolute;
   left: -62vw;
@@ -758,9 +758,10 @@ body {
   color: #5C6356;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  text-decoration: none;
 }
 
-.back-button .arrow:hover {
+.back-button:hover {
   color: #FFFFFF;
 }
 
