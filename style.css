@@ -1,0 +1,1106 @@
+/* height: 812px;
+ width: 1440px; */
+/* Background color for the website */
+body {
+    margin: 0 auto;      /* Centers the content horizontally */
+
+}
+
+.navigation-bar-home .home-link.active div {
+
+}
+
+
+
+.martin {
+  position: absolute;
+  bottom: -0.2em;
+  left: 2vw;
+  width: auto;
+  height: auto;
+  max-width: 60vw;
+  object-fit: contain;
+  transform-origin: bottom left;
+  transform: scale(1); /* scale down this value to shrink from bottom */
+}
+
+
+.martin-linden {
+    position: absolute;
+    font-family: 'Italiana', serif;
+    font-size: 5.90vw;      /* 85px */
+    right: 3.47vw;          /* 50px */
+    bottom: 19.7vh;         /* 160px */
+    font-weight: bold;
+    color: #8C512B;
+
+}
+.interaction-design{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.47vw;      /* 50px */
+    right: 3.47vw;
+    bottom: 13.55vh;
+    font-weight: 100;
+    color: #8C512B;
+
+
+}
+
+.navigation-bar-home {
+    display: flex;
+    gap: 1.736vw;
+    position: absolute;
+    right: 3.473vw;
+    top: 2.463vh;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1;
+}
+
+.nav-rectangel {
+    width: 100%; /* Full width */
+    height: 7.389vh;
+    background-color: #FFB16C;
+
+}
+
+
+.home-home, .project-home, .education-home, .contact-home {
+    font-size: 1.74vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #A36238;
+}
+
+
+.text-wrapper {
+  position: absolute;
+  left: 13.889vw;
+  top: 9.852vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-designer {
+  font-size: 6.94vw;
+  font-weight: bold;
+
+}
+
+.text-block-1,
+.text-block-2 {
+  font-size: 1.67vw;
+  font-weight: 300;
+  text-align: justify;
+  max-width: 50vw;
+}
+
+.bold-text-1 {
+  font-weight: 500;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin-top: 2vh;
+}
+
+.keyword {
+  font-size: 1.25vw;
+  font-weight: 500;
+}
+
+
+""" Projects page"""
+.home-projects:hover {
+    color: #C50889;
+}
+
+.project-projects:hover {
+    color: #C50889;
+}
+
+.education-projects:hover {
+    color: #C50889;
+}
+
+.contact-projects:hover {
+    color: #C50889;
+}
+
+/* Linking the Projects page to Home page */
+.home-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.idea {
+    position: absolute;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.44vw;
+    font-weight: bold;
+    color: #5C6356;
+    top: 19.678vh;
+    left: 4.861vw;
+}
+
+.curved-line{
+    position: absolute;
+    width: 2.083vw;
+    height: 3.282vh;
+    top: 14.752vh;
+    left: 7.639vw;
+}
+
+.design {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.44vw;
+    font-weight: bold;
+    color: #5C6356;
+    top: 9.852vh;
+    left: 10.764vw;
+}
+
+.idea-2 {
+    position: absolute;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.44vw;
+    font-weight: bold;
+    color: #5C6356;
+    top: 22.678vh;
+    left: 4.861vw;
+}
+
+.curved-line-2{
+    position: absolute;
+    width: 2.083vw;
+    height: 3.282vh;
+    top: 17.752vh;
+    left: 7.639vw;
+}
+
+.design-2 {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.44vw;
+    font-weight: bold;
+    color: #5C6356;
+    top: 12.852vh;
+    left: 10.764vw;
+}
+
+.green-rectangle {
+    position: absolute;
+    width: 88.194vw;
+    height: 66.502vh;
+    background-color: #98A68D;
+    top: 22.788vh;
+    left: 10.764vw;
+    border-radius: 2vw;
+
+
+}
+
+
+
+.container-dotmenu {
+      position: absolute;
+      display: flex;
+      gap: 0.694vw;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      top: 17.6vh;
+      left: 30.903vw;
+}
+
+.dot-1 {
+      width: 1.389vw;
+      height: 2.463vh;
+      background-color: #5C6356;
+      border-radius: 50%;
+}
+
+.dot-2, .dot-3, .dot-4, .dot-5, .dot-6{
+      width: 1.389vw;
+      height: 2.463vh;
+      background-color: #FFFFFF;
+      border-radius: 50%;
+
+}
+
+/* Green rectangle animations */
+.green-rectangle {
+    transition: opacity 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative; /* Important for positioning child elements absolutely */
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+/* Hidden content container */
+.content-container {
+    display: none;
+}
+
+/* Specific styling and positioning for content elements */
+.content-1 {
+    position: absolute;
+    top: 6.158vh; /* Adjust as needed */
+    left: 3.472vw;
+    font-size: 1.53vw;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.content-2 {
+    position: absolute;
+    top: 8.621vh;
+    left: 4.861vw;
+    font-size: 1.53vw;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Repeat similar positioning for other content elements */
+.content-3 {
+    position: absolute;
+    top: 12.32vh;
+    left: 6.94vw;
+}
+
+.content-4 {
+    position: absolute;
+    top: 14.78vh;
+    left: 8.33vh;
+}
+
+.content-5 {
+    position: absolute;
+    top: 17.24vh;
+    left: 9.72vw;
+}
+
+/* Base style for dots */
+.dot-1, .dot-2, .dot-3, .dot-4, .dot-5, .dot-6 {
+    width: 1.38vw;
+    height: 2.46vh;
+    background-color: #FFFFFF; /* Default unfilled color */
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for filled dots */
+.filled-dot {
+    background-color: #5C6356; /* Same color as the green rectangle */
+}
+
+#container-1 {
+    position: absolute;
+    top: 30vh;
+    left: 13.19vw;
+}
+
+#container-2 {
+    position: absolute;
+    top: 38.18vh;
+    left: 13.19vw;;
+}
+
+#container-3{
+    position: absolute;
+    top: 38.18vh;
+    left: 13.19vw;
+}
+
+.hidden-text-container {
+  position: relative; /* Container needs relative positioning to position children absolutely */
+  width: 70%;
+  height: 25.84vh; /* Adjust height as needed */
+}
+
+
+.hidden-text-content {
+  position: absolute;
+  width: 25%; /* Each block takes up 25% of the container's width */
+  font-size: 1.53vw;
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+/* Adjust left position for each block in pixels */
+.hidden-text-content:nth-child(1) {
+  left: 0vw;  /* First block starts at the left edge */
+}
+
+.hidden-text-content:nth-child(2) {
+  left: 19.10vw; /* Move the second block 150px to the right */
+}
+
+.hidden-text-content:nth-child(3) {
+  left: 40.28vw; /* Move the third block 300px to the right */
+}
+
+.hidden-text-content:nth-child(4) {
+  left: 59.38vw; /* Move the fourth block 450px to the right */
+}
+
+.process {
+  position: absolute;
+  top: -7.39vh;
+  left: 0vw;
+  font-size: 1.53vw;
+  color: #5C6356;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.product {
+  position: absolute;
+  top: -7.39vh;
+  left: 40.28vw;
+  font-size: 1.53vw;
+  color: #5C6356;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.process_2 {
+  position: absolute;
+  top: -7.39vh;
+  left: 0vw;
+  font-size: 1.53vw;
+  color: #5C6356;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.product_2 {
+  position: absolute;
+  top: -7.39vh;;
+  left: 40.28vw;
+  font-size: 1.53vw;
+  color: #5C6356;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.process_3 {
+  position: absolute;
+  top: -7.39vh;
+  left: 0vw;
+  font-size: 1.53vw;
+  color: #5C6356;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.product_3 {
+  position: absolute;
+  top: -7.39vh;
+  left: 40.28vw;
+  font-size: 1.53vw;
+  color: #5C6356;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#image_project-1 {
+    position: relative;
+    width: 92%; /* Adjust the width as needed */
+    height: 92%; /* Adjust the height as needed */
+    display: flex;
+    top: 2.46vh;
+    left: 3.47vw;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images inside the container */
+    gap: 1.39vw; /* Adds space between images */
+    position: relative;
+    /* No transition here, as we want each image to transition individually */
+}
+
+.image-container img {
+    height: auto; /* Maintains the aspect ratio */
+    width: 100%; /* Adjusts the image width to fit the container */
+    max-width: 27.78vw; /* Sets a max width for the images */
+    display: block; /* Prevents extra spacing around the image */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for each image */
+    transform-origin: center center; /* Scale from the center */
+}
+
+.image-container img:hover {
+    transform: scale(1.02); /* Scale on hover for individual images */
+    cursor: pointer;
+}
+
+
+.image-container-2 {
+    position: relative; /* Ensures child images are positioned relative to this container */
+    top: 3.5vh;
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+}
+
+.verni-1 {
+    position: absolute;
+    top: -3.69vh;
+    left: 25.97vw;
+    width: 56.25vw;
+    height: auto;
+    transition: all 0.3s ease-in-out; /* Smooth transition with ease-in-out */
+    transform-origin: center center; /* Scale from the center */
+}
+
+.verni-1:hover {
+    transform: scale(1.02); /* Scale on hover */
+    cursor: pointer;
+}
+
+
+.verni-2 {
+    position: absolute;
+    top: -3.69vh;      /* Adjust freely */
+    left: -2.08vw;     /* Adjust freely */
+    width: 26.6vw;    /* Adjust width independently */
+    height: auto;    /* Maintain aspect ratio */
+    transition: all 0.3s ease-in-out; /* Smooth transition with ease-in-out */
+    transform-origin: center center; /* Scale from the center */
+
+}
+
+.verni-2:hover {
+    transform: scale(1.02); /* Scale on hover */
+    cursor: pointer;
+}
+
+.verni-4 {
+    position: absolute;
+    top: 26.11vh;      /* Adjust freely */
+    left: -2.08vw;     /* Adjust freely */
+    width: 26.6vw;    /* Adjust width independently */
+    height: auto;    /* Maintain aspect ratio */
+    transition: all 0.3s ease-in-out; /* Smooth transition with ease-in-out */
+    transform-origin: center center; /* Scale from the center */
+
+}
+
+.verni-4:hover {
+    transform: scale(1.02); /* Scale on hover */
+    cursor: pointer;
+}
+
+.verni-5 {
+    position: absolute;
+    top: 34.15vh;      /* Adjust freely */
+    left: -2.08vw;     /* Adjust freely */
+    width: 26.6vw;    /* Adjust width independently */
+    height: auto;    /* Maintain aspect ratio */
+    transition: all 0.3s ease-in-out; /* Smooth transition with ease-in-out */
+    transform-origin: center center; /* Scale from the center */
+}
+
+.verni-5:hover {
+    transform: scale(1.02); /* Scale on hover */
+    cursor: pointer;
+}
+
+.verni-6 {
+    position: absolute;
+    top: 18.2vh;      /* Adjust freely */
+    left: -2.08vw;     /* Adjust freely */
+    width: 26.6vw;    /* Adjust width independently */
+    height: auto;    /* Maintain aspect ratio */
+    transition: all 0.3s ease-in-out; /* Smooth transition with ease-in-out */
+    transform-origin: center center; /* Scale from the center */
+}
+
+.verni-6:hover {
+    transform: scale(1.02); /* Scale on hover */
+    cursor: pointer;
+}
+
+#image_project-3 {
+    position: relative;
+    width: 92%; /* Adjust the width as needed */
+    height: 92%; /* Adjust the height as needed */
+    display: flex;
+    top: 2.46vh;
+    left: 3.47vw;
+}
+.image-container-3 {
+    display: flex;
+    justify-content: center; /* Centers the images inside the container */
+    gap: 1.39vw; /* Adds space between images */
+    position: relative;
+
+}
+
+.image-container-3 img {
+    height: auto; /* Maintains the aspect ratio */
+    width: 100%; /* Adjusts the image width to fit the container */
+    max-width: 27.78vw; /* Sets a max width for the images */
+    display: block; /* Prevents extra spacing around the image */
+}
+
+/* Styling for the enlarged image overlay */
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s;
+}
+
+.image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 0px;
+
+}
+
+/* Show the overlay when active */
+.image-overlay.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, visibility 0s linear 0s;
+}
+
+/* Ensures images have cursor pointer */
+.image-container img,
+.image-container-2 img,
+.image-container-3 img {
+    cursor: pointer;
+}
+/* General image positioning */
+.overview-1 img,
+.overview-2 img,
+.overview-3 img,
+.overview-4 img,
+.overview-5 img,
+ .overview-6 img{  /* New added image */
+    position: absolute;
+    border-radius: 2vw;
+    border: 0.3vw solid #98A68D;
+    transition: all 0.3s ease; /* Smooth transition for scaling and movement */
+
+}
+
+/* Initial positioning for each image */
+.overview-1 img {
+  top: 20.89vh;
+  left: 11.11vw;
+  width: 19.79vw;
+
+}
+
+/* The wrapper div for the image */
+
+
+/* Ensure the image takes up the full space of the container */
+
+
+.overview-2 img {
+    top: 20.89vh;
+    left: 32.63vw;
+    width: 49.03vw;
+
+}
+
+.overview-3 img {
+    top: 73.5vh;
+    left: 32.63vw;
+    width: 49.03vw;
+
+}
+
+.overview-4 img {
+    top: 100vh;
+    left: 11.11vw;
+    width: 19.79vw;
+
+}
+
+/* Add .overview-5 position below .overview-4 */
+.overview-5 img {
+    top: 131.7vh; /* 1020px is calculated to match the gap */
+    left: 32.63vw;
+    width: 49.03vw;
+
+}
+
+.overview-6 img {
+    top: 178.47vh; /* 1020px is calculated to match the gap */
+    left: 11.11vw;
+    width: 19.79vw;
+}
+
+
+/* Hover effect for overview-1 */
+.overview-1:hover img {
+    transform: scale(1.1); /* Scale up the image */
+    top: 24.39vh; /* Move the image down */
+    left: 12vw;  /* Move the image to the left */
+    border: 0.486vw solid #E0E8D9;
+}
+
+/* Move images 2, 3, and 4 when overview-1 is hovered */
+.overview-1:hover ~ .overview-2 img {
+    left: 34.5vw; /* Move overview-2 to the right */
+}
+
+.overview-1:hover ~ .overview-3 img {
+    left: 34.5vw; /* Move overview-3 to the right */
+}
+
+.overview-1:hover ~ .overview-4 img {
+    top: 106.89vh; /* Move overview-4 down */
+}
+
+/* Hover effect for overview-2 */
+.overview-2:hover img {
+    transform: scale(1.1); /* Scale up the image */
+    top: 23.39vh;
+   left: 35.42vw;
+    border: 0.486vw solid #E0E8D9;
+}
+
+/* Hover effect for overview-4 */
+.overview-4:hover img {
+    transform: scale(1.1); /* Scale up the image */
+    top: 103.42vh;
+    left: 12.22vw;
+    border: 0.486vw solid #E0E8D9;
+}
+
+/* Move overview-3 when overview-4 is hovered */
+.overview-2:hover ~ .overview-3 img {
+    top: 78.39vh; /* Move overview-3 down */
+}
+
+/* Hover effect for overview-3 */
+.overview-3:hover img {
+    transform: scale(1.1); /* Scale up the image */
+    top: 75.74vh;
+    left: 35.14vw;
+    border: 0.486vw solid #E0E8D9;
+}
+
+
+
+
+/* Hover effect for overview-5 */
+.overview-5:hover img {
+    transform: scale(1.1);
+    top: 133.0vh;
+    left: 35.14vw;
+    border: 0.486vw solid #E0E8D9;
+}
+
+.overview-6:hover img {
+    transform: scale(1.1);
+    top: 182.3vh;
+    left: 12.22vw;
+    border: 0.486vw solid #E0E8D9;
+}
+
+.back-button .arrow {
+  font-size: 1.74vw;
+  position: absolute;
+  left: -62vw;
+  cursor: pointer;
+  color: #5C6356;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.back-button .arrow:hover {
+  color: #FFFFFF;
+}
+
+/* Education Page */
+.navigation-bar-container{
+    display: flex;
+    gap: 2.08vw;
+    position: absolute;
+    right: 3.47vw;
+    top: 8.99vh;
+}
+
+.home-edu, .project-edu, .education-edu, .contact-edu {
+    font-size: 2.08vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #535A7A;
+}
+
+.home-edu:hover,
+.project-edu:hover,
+.education-edu:hover,
+.contact-edu:hover {
+    color: #C50889;
+}
+
+.degree {
+    position: absolute;
+    font-size: 4.44vw;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    top: 13.55vh;
+    left: 4.861vw;
+    color: #3F4666;
+}
+
+.degree-year{
+    position: absolute;
+    font-size: 2.08vw;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    top: 17.24vh;
+    left: 22.14vw;
+    color: #3F4666;
+}
+
+.degree-gapyear {
+    position: absolute;
+    font-size: 0.97vw;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    top: 23.40vh;
+    left: 4.78vw;
+    color: #000000;
+}
+
+.kth-more, .umu-more {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1.67vw;
+    font-family: 'Roboto', sans-serif;
+    color: #2B3252;
+}
+
+.kth-more:hover, .umu-more:hover {
+    color: white;
+}
+
+.umu {
+    position: relative;
+    left: 8.5vw;
+    top: 1.5vh;
+    width: 6.60vw;
+    height: auto;
+margin-bottom: 3.7vh;
+border-radius: 0.35vw;
+
+}
+
+.b-sc {
+    position: relative;
+    top: -14vh;
+    left: 16.5vw;
+    font-size: 2.08vw;
+max-width: 25.69vw;
+
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0vh;
+}
+
+.b-sc-uni {
+    position: relative;
+    top: -13.5vh;
+    left: 16.5vw;
+    font-size: 1.67vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-umu {
+    position: relative;
+    text-align: justify;
+    font-size: 1.67vw;
+    font-family: 'Roboto', sans-serif;
+    max-width: 31vw;
+    font-weight: 300;
+    margin-top: 2.46vh;
+    left: 9.5vw;
+    top: -9.5vh;
+}
+
+.umu-more {
+    position: relative;
+    left: 21.5vw;
+    top: 20.2vh;
+}
+
+/* Flip Card Base */
+.flip-card {
+    position: relative;
+    width: 48.61vw;
+    height: 67.73vh;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+}
+
+.container-kth {
+    position: relative;
+    left: 2.08vw;
+    top: -10.5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.kth {
+    position: relative;
+    left: 5.5vw;
+    top: 4vh;
+    width: 6.60vw;
+    height: auto;
+margin-bottom: 3.7vh;
+border-radius: 0.14vw;
+
+}
+
+.m-sc {
+    position: relative;
+    top: -12vh;
+    left: 13.5vw;
+    font-size: 2.08vw;
+    max-width: 25.69vw;
+
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0vh;
+}
+
+.m-sc-uni {
+    position: relative;
+    top: -11.5vh;
+    left: 13.5vw;
+    font-size: 1.67vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-kth {
+    position: relative;
+    text-align: justify;
+    font-size: 1.67vw;
+    font-family: 'Roboto', sans-serif;
+    max-width: 30vw;
+    font-weight: 300;
+    margin-top: 2.46vh;
+    left: 6.5vw;
+    top: -12vh;
+}
+
+.kth-more {
+    position: relative;
+    left: 16.67vw;
+    top: 18vh;
+}
+
+.strack {
+    width: 0.21vw;
+    height: 55.4vh;
+    background-color: #919DD4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 36vh;
+    transition: left 0.4s ease;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    gap: 1.04vw;
+    justify-content: center;
+    align-items: center;
+    height: 96.3vh;
+    top: 16.00vh;
+    width: 100%;
+}
+
+.course-text {
+    opacity: 0;
+    position: absolute;
+    top: 46%;
+    left: 69.44vw;
+    transform: translate(-50%, -50%);
+    font-size: 1.39vw;
+    font-family: 'Roboto', sans-serif;
+    width: 34.72vw;
+    display: flex;
+    flex-direction: column;
+ gap: 0.56vw;
+
+    font-weight: 300;
+}
+
+#course-text-umu {
+    opacity: 0;
+    position: absolute;
+    top: 34.48vh;
+    left: 15.28vw;
+    font-size: 1.39vw;
+    font-family: 'Roboto', sans-serif;
+    width: 34.72vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.56vw;
+
+    z-index: -1;
+    font-weight: 300;
+}
+
+.course-text.show, #course-text-umu.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.row{
+    font-size: 1.39vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.subject-description{
+    font-size: 0.97vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.description{
+    font-size: 0.97vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Contact Page */
+#contact-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.contact-header {
+    position: absolute;
+    font-size: 6.94vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    left: 9.889vw;
+    top: 9.852vh;
+    color: #ffffff;
+    max-width: 41.67vw;
+}
+
+.mail {
+    position: absolute;
+    font-size: 1.67vw;
+    top: 43.08vh;       /* 350px / 812 * 100 */
+    left: 50vw;
+    color: #ffffff;
+    font-weight: 300;
+    max-width: 26.39vw;  /* 380px / 1440 * 100 */
+    font-family: 'Roboto', sans-serif;
+}
+
+.highlighted {
+    font-weight: 500;
+}
+
+.phone {
+    position: absolute;
+    font-size: 1.67vw;
+    top: 59.11vh;       /* 480px / 812 * 100 */
+    left: 50vw;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rectangel-contact {
+    position: absolute;
+    top: 43.2vh;        /* 350px / 812 * 100 */
+    left: 9.889vw;
+    background-color: #3F3F3F;
+    height: 54.41vh;     /* 442px / 812 * 100 */
+    width: 33.00vw;      /* 475px / 1440 * 100 */
+    border-top: 1.39vw solid #FFFFFF;       /* 20px / 1440 * 100 */
+    border-left: 1.39vw solid #FFFFFF;      /* 20px / 1440 * 100 */
+    border-right: 0.35vw solid #FFFFFF;     /* 5px / 1440 * 100 */
+    border-bottom: 0;
+    border-top-left-radius: 0.35vw;         /* 5px / 1440 * 100 */
+    border-top-right-radius: 0.35vw;        /* 5px / 1440 * 100 */
+}
+
+.me img {
+    position: absolute;
+    top: 39.16vh;        /* 318px / 812 * 100 */
+    left: 11.279vw;
+    height: auto;
+    width: 34.24vw;      /* 493px / 1440 * 100 */
+}
