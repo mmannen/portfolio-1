@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
       kthMore.disabled = true;
       setTimeout(() => { kthMore.disabled = false; }, 1000);
     } else {
-      strack.style.left = "50%";
+      strack.style.left = "calc(50 * var(--vw))";
       setTimeout(() => {
         umuContent.style.display = "flex";
       }, 600);
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", function () {
       umuMore.disabled = true;
       setTimeout(() => { umuMore.disabled = false; }, 1000);
     } else {
-      strack.style.left = "50%";
+      strack.style.left = "calc(50 * var(--vw))";
       setTimeout(() => {
         kthContent.style.display = "flex";
       }, 600);
