@@ -604,8 +604,8 @@ body.loaded {
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100 * var(--vw)); /* Converts 100vw to px */
-    height: calc(100 * var(--vh)); /* Converts 100vh to px */
+    width: 100vw; /* Converts 100vw to px */
+    height: 100vh; /* Converts 100vh to px */
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
