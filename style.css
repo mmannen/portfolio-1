@@ -5,11 +5,12 @@
 body {
   margin: 0 auto;
   opacity: 0;
-
+  overflow-x: hidden;
 }
 body.loaded {
   opacity: 1;
 }
+
 
 
 .navigation-bar-home .home-link.active div {
@@ -48,17 +49,18 @@ body.loaded {
   position: absolute;
   font-family: 'Italiana', serif;
   font-size: calc(var(--vw) * 5.9);
-  right: calc(var(--vw) * 3.47);
+   left: calc(var(--vw) * 49.5);
   bottom: calc(var(--vh) * 19.7);
   font-weight: bold;
   color: #8C512B;
+
 }
 
 .interaction-design {
   position: absolute;
   font-family: 'Roboto', sans-serif;
   font-size: calc(var(--vw) * 3.47);
-  right: calc(var(--vw) * 3.47);
+  left: calc(var(--vw) * 69.5);
   bottom: calc(var(--vh) * 13.55);
   font-weight: 100;
   color: #8C512B;
@@ -974,7 +976,7 @@ body.loaded {
     height: calc(55.4 * var(--vh));
     background-color: #919DD4;
     position: absolute;
-    left: 50%;
+    left: calc(50 * var(--vw));
     transform: translateX(-50%);
     top: calc(36 * var(--vh));
     transition: left 0.4s ease;
@@ -984,7 +986,6 @@ body.loaded {
     position: absolute;
     display: flex;
     gap: calc(1.04 * var(--vw));
-    justify-content: center;
     align-items: center;
     height: calc(96.3 * var(--vh));
     top: calc(16.00 * var(--vh));
@@ -1048,9 +1049,9 @@ body.loaded {
 
 /* Contact Page */
 #contact-section {
-    position: relative;
+
     height: calc(100 * var(--vh));
-    width: 100%;
+
 }
 
 .contact-header {
