@@ -258,6 +258,8 @@ body.loaded {
       background-color: #5C6356;
       border-radius: 50%;
       cursor: pointer;
+      border: solid #98A68D 0.2083vw;
+      box-sizing: border-box;
 }
 
 .dot-2, .dot-3, .dot-4, .dot-5, .dot-6{
@@ -266,6 +268,8 @@ body.loaded {
       background-color: #FFFFFF;
       border-radius: 50%;
       cursor: pointer;
+      border: solid #98A68D 0.2083vw;
+      box-sizing: border-box;
 
 }
 
