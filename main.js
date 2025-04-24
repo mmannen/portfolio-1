@@ -1,3 +1,7 @@
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const dots = document.querySelectorAll('.container-dotmenu div');
   const greenRectangle = document.querySelector('.green-rectangle');
@@ -14,14 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Apply specific dimensions for project-detail-2.html
         if (window.location.pathname.includes("project-detail-2.html", "project-detail-4.html")) {
-            greenRectangle.style.width = '87.32vw';  // 1255px in vw
-            greenRectangle.style.height = '61.5vh';  // 500px in vh
+            greenRectangle.style.width = 'calc(87.32 * var(--vw))';  // 1255px in vw
+            greenRectangle.style.height = 'calc(61.5 * var(--vh))';  // 500px in vh
         } else if (window.location.pathname.includes("project-detail-3.html")) {
-            greenRectangle.style.width = '87.32vw';  // 1255px in vw
-            greenRectangle.style.height = '67.92vh'; // 552px in vh
+            greenRectangle.style.width = 'calc(87.32 * var(--vw))';  // 1255px in vw
+            greenRectangle.style.height = 'calc(67.92 * var(--vh))'; // 552px in vh
         } else if (window.location.pathname.includes("project-detail-5.html")) {
-            greenRectangle.style.width = '87.32vw';  // 1255px in vw
-            greenRectangle.style.height = '46.2vh';  // 375px in vh
+            greenRectangle.style.width = 'calc(87.32 * var(--vw))';  // 1255px in vw
+            greenRectangle.style.height = 'calc(46.2 * var(--vh))';  // 375px in vh
         } else {
             greenRectangle.style.width = '';
             greenRectangle.style.height = '';
@@ -323,13 +327,20 @@ document.addEventListener("DOMContentLoaded", function () {
     if (overview1) {
       overview1.addEventListener('mouseenter', () => {
         if (overview4Img) {
-          overview4Img.style.top = '106.89vh';
+          overview4Img.style.top = 'calc(106.89 * var(--vh))';
+        }
+        if (overview6Img) {
+          overview6Img.style.top = 'calc(186 * var(--vh))';
         }
       });
 
       overview1.addEventListener('mouseleave', () => {
         if (overview4Img) {
           overview4Img.style.top = '';
+        }
+        if (overview6Img) {
+          overview6Img.style.top = '';  // 1110px in vh
+
         }
       });
     }
@@ -338,10 +349,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (overview2) {
       overview2.addEventListener('mouseenter', () => {
         if (overview5Img) {
-          overview5Img.style.top = '136.1vh';  // 1105px in vh
+          overview5Img.style.top = 'calc(136 * var(--vh))';  // 1105px in vh
 
         }
       });
+
+
 
       overview2.addEventListener('mouseleave', () => {
         if (overview5Img) {
@@ -354,7 +367,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (overview3) {
       overview3.addEventListener('mouseenter', () => {
         if (overview5Img) {
-          overview5Img.style.top = '136.6vh';  // 1110px in vh
+          overview5Img.style.top = 'calc(136.6 * var(--vh))';  // 1110px in vh
 
         }
       });
@@ -370,13 +383,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (overview4) {
       overview4.addEventListener('mouseenter', () => {
         if (overview3Img) {
-          overview3Img.style.left = '34.5vw';
+          overview3Img.style.left = 'calc(34.5 * var(--vw))';
         }
         if (overview5Img) {
-          overview5Img.style.left = '34.5vw';
+          overview5Img.style.left = 'calc(34.5 * var(--vw))';
         }
         if (overview6Img) {
-          overview6Img.style.top = '185.89vh';
+          overview6Img.style.top = 'calc(185.89 * var(--vh))';
         }
       });
 
@@ -394,3 +407,22 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+function updateScaleVars() {
+  const designWidth = 1440;
+  const designHeight = 812;
+
+  const scaleX = window.innerWidth / designWidth;
+  const scaleY = window.innerHeight / designHeight;
+  const scale = Math.min(scaleX, scaleY);
+
+  const vw = (designWidth * scale) / 100;
+  const vh = (designHeight * scale) / 100;
+
+  document.documentElement.style.setProperty('--vw', `${vw}px`);
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty('--scale', scale);
+}
+
+window.addEventListener('resize', updateScaleVars);
+window.addEventListener('load', updateScaleVars);
