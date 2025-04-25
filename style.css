@@ -83,7 +83,7 @@ body.loaded {
 }
 
 .nav-rectangel {
-   width: calc(var(--vw) * 100);
+  width: 100vw;
   height: calc(var(--vh) * 7.389);
   background-color: #FFB16C;
 }
