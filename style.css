@@ -492,21 +492,20 @@ body.loaded {
   cursor: pointer;
 }
 
-/* Position each image individually */
 .img-1 {
   top: calc(var(--vh) * 0); /* Adjust as needed */
-  left: calc(var(--vw) * -1.8);
+  left: calc(var(--vw) * -2);
 
 }
 
 .img-2 {
   top: calc(var(--vh) * 0); /* Adjust as needed */
-  left: calc(var(--vw) * 15.5); /* Move right */
+  left: calc(var(--vw) * 15.3); /* Move right */
 }
 
 .img-3 {
   top: calc(var(--vh) * 0);
-  left: calc(var(--vw) * 32.7); /* Move further right */
+  left: calc(var(--vw) * 32.6); /* Move further right */
 }
 
 .img-4 {
@@ -516,7 +515,7 @@ body.loaded {
 
 .img-5 {
   top: calc(var(--vh) * 0);
-  left: calc(var(--vw) * 67.1); /* And so on */
+  left: calc(var(--vw) * 67.2); /* And so on */
 }
 
 .image-container img:hover {
