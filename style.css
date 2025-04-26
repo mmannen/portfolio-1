@@ -464,29 +464,59 @@ body.loaded {
 
 
 #image_project-1 {
-    position: relative;
-    width: 92%; /* Adjust the width as needed */
-    height: 92%; /* Adjust the height as needed */
-    display: flex;
-    top: calc(var(--vh) * 2.46);
-    left: calc(var(--vw) * 3.47);
+  position: relative;
+  top: calc(var(--vh) * 2.46);
+  left: calc(var(--vw) * 3.47);
 }
 
 .image-container {
-    display: flex;
-    justify-content: center; /* Centers the images inside the container */
-    gap: calc(var(--vw) * 1.39); /* Adds space between images */
-    position: relative;
-    /* No transition here, as we want each image to transition individually */
+  position: relative; /* No flex! Just relative so the images can be absolutely positioned inside */
+  width: 100%;
+  height: 100%;
 }
 
+/* General image styles */
 .image-container img {
-    height: auto; /* Maintains the aspect ratio */
-    width: 100%; /* Adjusts the image width to fit the container */
-    max-width: calc(var(--vw) * 27.78); /* Sets a max width for the images */
-    display: block; /* Prevents extra spacing around the image */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for each image */
-    transform-origin: center center; /* Scale from the center */
+  position: absolute; /* Make each image independent */
+  height: auto;
+  width: calc(var(--vw) * 16); /* Set width relative to viewport */
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+  display: block;
+}
+
+/* Hover effect for all images */
+.image-container img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Position each image individually */
+.img-1 {
+  top: calc(var(--vh) * 0); /* Adjust as needed */
+  left: calc(var(--vw) * -1.8);
+
+}
+
+.img-2 {
+  top: calc(var(--vh) * 0); /* Adjust as needed */
+  left: calc(var(--vw) * 15.5); /* Move right */
+}
+
+.img-3 {
+  top: calc(var(--vh) * 0);
+  left: calc(var(--vw) * 32.7); /* Move further right */
+}
+
+.img-4 {
+  top: calc(var(--vh) * 0);
+  left: calc(var(--vw) * 49.9); /* Move even further */
+}
+
+.img-5 {
+  top: calc(var(--vh) * 0);
+  left: calc(var(--vw) * 67.1); /* And so on */
 }
 
 .image-container img:hover {
