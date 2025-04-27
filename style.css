@@ -918,7 +918,7 @@ body.loaded {
 .umu-more {
     position: relative;
     left: calc(21.5 * var(--vw));
-    top: calc(21.4 * var(--vh));
+    top: calc(20.9 * var(--vh));
 }
 
 /* Flip Card Base */
