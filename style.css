@@ -791,7 +791,7 @@ body.loaded {
 .back-button {
   font-size:  calc(var(--vw) * 1.74);
   position: absolute;
-  left:  calc(var(--vw) * -62);
+  left:  calc(var(--vw) * -64.5);
   cursor: pointer;
   color: #5C6356;
   font-family: 'Roboto', sans-serif;
