@@ -1108,18 +1108,6 @@ body.loaded {
     font-weight: 500;
 }
 
-.phone {
-    position: absolute;
-    font-size: calc(1.1111 * var(--vw)); /* Consider converting to vw if needed */
-    max-width: calc(24.3056 * var(--vw));
-    text-align: justify;
-    top: calc(60.11 * var(--vh));
-    left: calc(50 * var(--vw));
-    color: #ffffff;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-}
-
 .highlighted-2 {
     font-weight: 600;
 }
@@ -1145,4 +1133,25 @@ body.loaded {
     left: calc(11.279 * var(--vw));
     height: auto;
     width: calc(34.24 * var(--vw));
+}
+
+.or {
+    position: absolute;
+    font-size: calc(1.67 * var(--vw));
+    max-width: calc(24.3056 * var(--vw));
+    text-align: justify;
+    top: calc(56.5 * var(--vh));
+    left: calc(50 * var(--vw));
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.linkedin img{
+    position: absolute;
+    height: auto;
+    width: calc(5 * var(--vw));
+    border-radius: 10px;
+    top: calc(63 * var(--vh));
+    left: calc(50 * var(--vw));
 }
