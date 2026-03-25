@@ -330,13 +330,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (overview1) {
     overview1.addEventListener('mouseenter', () => {
       if (overview4Img) overview4Img.style.top = 'calc(106.89 * var(--vh))';
-      if (overview5Img) overview5Img.style.left = sideMove; // ✅ added
+      if (overview5Img) overview5Img.style.left = sideMove; 
       if (overview6Img) overview6Img.style.top = 'calc(186 * var(--vh))';
     });
 
     overview1.addEventListener('mouseleave', () => {
       if (overview4Img) overview4Img.style.top = '';
-      if (overview5Img) overview5Img.style.left = ''; // ✅ reset
+      if (overview5Img) overview5Img.style.left = ''; 
       if (overview6Img) overview6Img.style.top = '';
     });
   }
@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // === OVERVIEW 3 ===
   if (overview3) {
     overview3.addEventListener('mouseenter', () => {
-      if (overview5Img) overview5Img.style.top = spacing; // ✅ same spacing
+      if (overview5Img) overview5Img.style.top = spacing; 
     });
 
     overview3.addEventListener('mouseleave', () => {
