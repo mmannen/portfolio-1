@@ -312,101 +312,75 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const overview1 = document.querySelector('.overview-1');
-    const overview2 = document.querySelector('.overview-2');
-    const overview3 = document.querySelector('.overview-3');
-    const overview4 = document.querySelector('.overview-4');
+document.addEventListener('DOMContentLoaded', () => {
+  const overview1 = document.querySelector('.overview-1');
+  const overview2 = document.querySelector('.overview-2');
+  const overview3 = document.querySelector('.overview-3');
+  const overview4 = document.querySelector('.overview-4');
 
-    const overview3Img = document.querySelector('.overview-3 img');
-    const overview4Img = document.querySelector('.overview-4 img');
-    const overview5Img = document.querySelector('.overview-5 img');
-    const overview6Img = document.querySelector('.overview-6 img');
+  const overview3Img = document.querySelector('.overview-3 img');
+  const overview4Img = document.querySelector('.overview-4 img');
+  const overview5Img = document.querySelector('.overview-5 img');
+  const overview6Img = document.querySelector('.overview-6 img');
 
-    // === OVERVIEW 1 Hover logic ===
-    if (overview1) {
-      overview1.addEventListener('mouseenter', () => {
-        if (overview4Img) {
-          overview4Img.style.top = 'calc(106.89 * var(--vh))';
-        }
-        if (overview6Img) {
-          overview6Img.style.top = 'calc(186 * var(--vh))';
-        }
-      });
+  const spacing = 'calc(136 * var(--vh))';
+  const sideMove = 'calc(34.5 * var(--vw))';
 
-      overview1.addEventListener('mouseleave', () => {
-        if (overview4Img) {
-          overview4Img.style.top = '';
-        }
-        if (overview6Img) {
-          overview6Img.style.top = '';  // 1110px in vh
+  // === OVERVIEW 1 ===
+  if (overview1) {
+    overview1.addEventListener('mouseenter', () => {
+      if (overview4Img) overview4Img.style.top = 'calc(106.89 * var(--vh))';
+      if (overview5Img) overview5Img.style.left = sideMove; // ✅ added
+      if (overview6Img) overview6Img.style.top = 'calc(186 * var(--vh))';
+    });
 
-        }
-      });
-    }
+    overview1.addEventListener('mouseleave', () => {
+      if (overview4Img) overview4Img.style.top = '';
+      if (overview5Img) overview5Img.style.left = ''; // ✅ reset
+      if (overview6Img) overview6Img.style.top = '';
+    });
+  }
 
-    // === OVERVIEW 2 Hover logic ===
-    if (overview2) {
-      overview2.addEventListener('mouseenter', () => {
-        if (overview5Img) {
-          overview5Img.style.top = 'calc(136 * var(--vh))';  // 1105px in vh
+  // === OVERVIEW 2 ===
+  if (overview2) {
+    overview2.addEventListener('mouseenter', () => {
+       overview5Img.style.top = 'calc(78.39 * var(--vh))';  // 1105px in vh
+    });
 
-        }
-      });
+    overview2.addEventListener('mouseleave', () => {
+      if (overview5Img) overview5Img.style.top = '';
+    });
+  }
 
+  // === OVERVIEW 3 ===
+  if (overview3) {
+    overview3.addEventListener('mouseenter', () => {
+      if (overview5Img) overview5Img.style.top = spacing; // ✅ same spacing
+    });
 
+    overview3.addEventListener('mouseleave', () => {
+      if (overview5Img) overview5Img.style.top = '';
+    });
+  }
 
-      overview2.addEventListener('mouseleave', () => {
-        if (overview5Img) {
-          overview5Img.style.top = '';
-        }
-      });
-    }
+  // === OVERVIEW 4 ===
+  if (overview4) {
+    overview4.addEventListener('mouseenter', () => {
+      if (overview3Img) overview3Img.style.left = sideMove;
+      if (overview5Img) overview5Img.style.left = sideMove;
+      if (overview6Img) overview6Img.style.top = 'calc(185.89 * var(--vh))';
+    });
 
-    // === OVERVIEW 3 Hover logic ===
-    if (overview3) {
-      overview3.addEventListener('mouseenter', () => {
-        if (overview5Img) {
-          overview5Img.style.top = 'calc(136.6 * var(--vh))';  // 1110px in vh
-
-        }
-      });
-
-      overview3.addEventListener('mouseleave', () => {
-        if (overview5Img) {
-          overview5Img.style.top = '';
-        }
-      });
-    }
-
-    // === OVERVIEW 4 Hover logic ===
-    if (overview4) {
-      overview4.addEventListener('mouseenter', () => {
-        if (overview3Img) {
-          overview3Img.style.left = 'calc(34.5 * var(--vw))';
-        }
-        if (overview5Img) {
-          overview5Img.style.left = 'calc(34.5 * var(--vw))';
-        }
-        if (overview6Img) {
-          overview6Img.style.top = 'calc(185.89 * var(--vh))';
-        }
-      });
-
-      overview4.addEventListener('mouseleave', () => {
-        if (overview3Img) {
-          overview3Img.style.left = '';
-        }
-        if (overview5Img) {
-          overview5Img.style.left = '';
-          overview5Img.style.top = ''; // Reset from overview-3 or overview-2 hover
-        }
-        if (overview6Img) {
-          overview6Img.style.top = '';
-        }
-      });
-    }
-  });
+    overview4.addEventListener('mouseleave', () => {
+      if (overview3Img) overview3Img.style.left = '';
+      if (overview5Img) {
+        overview5Img.style.left = '';
+        overview5Img.style.top = '';
+      }
+      if (overview6Img) overview6Img.style.top = '';
+    });
+  }
+});
 
 function updateScaleVars() {
   const designWidth = 1440;
